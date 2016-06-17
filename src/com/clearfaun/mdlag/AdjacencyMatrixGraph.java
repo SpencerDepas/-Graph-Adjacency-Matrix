@@ -8,6 +8,7 @@ import java.util.HashMap;
 public class AdjacencyMatrixGraph {
 
 
+    //main
     private HashMap<String, Vertex> hmap = new HashMap<String, Vertex>();
     private Vertex vertex;
     private int vertexSize;

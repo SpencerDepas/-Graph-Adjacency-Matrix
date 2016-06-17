@@ -18,7 +18,7 @@ public class BFS {
 
 
 
-
+        //bredth first search
         int number_of_nodes = adjacency_matrix[source].length - 1;
         int[] visited = new int[number_of_nodes + 1];
         int i, element;
