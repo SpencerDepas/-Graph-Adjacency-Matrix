@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class AdjacencyMatrixGraph {
 
 
-    private HashMap<Integer, Vertex> hmap = new HashMap<Integer, Vertex>();
+    private HashMap<String, Vertex> hmap = new HashMap<String, Vertex>();
     private Vertex vertex;
     private int vertexSize;
     private int[][] adjacencyMatrix;
@@ -19,12 +19,12 @@ public class AdjacencyMatrixGraph {
          adjacencyMatrix = new int[vertexSize + 1][vertexSize + 1];
      }
 
-    public void makeUndirectedEdge(int to, int from, int edge) {
+    public void makeUndirectedEdge(int to, int from, int weight) {
         try {
-            vertex = new Vertex(Integer.toString(edge));
-            adjacencyMatrix[to][from] = edge;
-            adjacencyMatrix[from][to] = edge;
-            hmap.put(from, vertex);
+            //vertex = new Vertex(Integer.toString(edge));
+            adjacencyMatrix[to][from] = weight;
+            adjacencyMatrix[from][to] = weight;
+            //hmap.put(from, vertex);
 
         } catch (ArrayIndexOutOfBoundsException index) {
             System.out.println("The vertices does not exists");
