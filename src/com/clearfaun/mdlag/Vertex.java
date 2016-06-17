@@ -10,7 +10,7 @@ public class Vertex {
     private final String name;
     private int index;
     private String UniqueData;
-
+    private boolean visited = false;
 
 
 
@@ -40,7 +40,13 @@ public class Vertex {
         return name;
     }
 
+    public boolean isVisited() {
+        return visited;
+    }
 
+    public void setVisited(boolean visited) {
+        this.visited = visited;
+    }
 
 
 

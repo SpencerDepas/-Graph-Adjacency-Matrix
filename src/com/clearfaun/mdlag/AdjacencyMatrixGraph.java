@@ -38,6 +38,10 @@ public class AdjacencyMatrixGraph {
 
     }
 
+    public int[][] getMatric(){
+        return adjacencyMatrix;
+    }
+
 
     public void makeDirectedEdge(int to, int from, int edge) {
         try {
